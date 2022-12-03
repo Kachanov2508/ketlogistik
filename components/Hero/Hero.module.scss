@@ -1,0 +1,28 @@
+.hero {
+    display: flex;
+    column-gap: 40px;
+    // align-items: center;
+    margin-top: 60px;
+
+    .left {
+        font-size: 70px;
+        line-height: .9;
+
+        span {
+            color: #1C8AC7;
+        }
+    }
+
+    .right {
+
+        p {
+            margin-bottom: 30px;
+            width: 255px;
+        }
+
+        .btn {
+            border-radius: 30px;
+            box-shadow: 0px 0px 30px rgb(83, 151, 230, .3);
+        }
+    }
+}

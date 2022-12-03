@@ -1,0 +1,33 @@
+.video {
+    margin-top: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px 40px 150px 40px;
+    border-radius: 12px;
+    
+    .steps {
+        display: flex;
+        column-gap: 50px;
+
+        div {
+            h4 {
+                font-size: 30px;
+            }
+
+            p {
+                font-size: 14px;
+                color: rgba(247, 247, 247, 0.5);
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+.youtube {
+    text-align: center;
+    margin-top: -120px;
+    margin-bottom: 50px;
+
+    iframe {
+        border-radius: 12px;
+    }
+}

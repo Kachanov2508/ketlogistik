@@ -1,0 +1,39 @@
+.grid {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 12px;
+    margin-top: -20px;
+
+    .steps {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+
+        .first_step {
+            background-color: #1C8AC7;
+        }
+
+        >div {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 15px;
+
+            div {
+                font-size: 30px;
+                font-weight: 900;
+                margin-bottom: 20px;
+            }
+
+            h4 {
+                font-size: 20px;
+                margin: 10px 0;
+            }
+
+            p {
+                color: rgba(247, 247, 247, 0.5);
+                font-size: 14px;
+            }
+        }
+    }
+}
