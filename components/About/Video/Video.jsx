@@ -7,7 +7,7 @@ const Video = () => {
 			<div className={classes.video}>
 				<HeadingSection>
 					<h4>О компании</h4>
-					<h2><span>Ketlogistik</span> одна из ведущих логистических компаний</h2>
+					<h2><span>Ketlogistic</span> одна из ведущих логистических компаний</h2>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem voluptatem nam voluptatum, labore animi eos quos veniam, officiis consectetur, atque aliquam sunt rerum ullam autem vel maxime optio temporibus molestias sint porro incidunt earum pariatur! Numquam dolorum fuga, officiis perferendis quos quod sunt obcaecati culpa error mollitia aut aperiam voluptates.</p>
 				</HeadingSection>
 				<div className={classes.steps}>
