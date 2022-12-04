@@ -14,7 +14,7 @@ const Footer = () => {
         </div>
         <div className={cls.bottom}>
             <div className={cls.logo}>
-                <h4>Ketlogistik</h4>
+                <h4>Ketlogistic</h4>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam officia mollitia maiores eos quidem dolores expedita quam laudantium quo sit!</p>
             </div>
             <div className={cls.links}>
@@ -30,13 +30,13 @@ const Footer = () => {
                 </ul>
                 <ul>
                     <li><Link href='/'>Instagram</Link></li>
-                    <li><Link href='/'>VK</Link></li>
-                    <li><Link href='/'>OK</Link></li>
+                    <li><Link href='/'>ВКонтакте</Link></li>
+                    <li><Link href='/'>Одноклассники</Link></li>
                 </ul>
             </div>
         </div>
         <div className={cls.copiright}>
-            Ketlogitik. All right reserved
+            &#169; Ketlogistic. All rights reserved
         </div>
     </div>
   )

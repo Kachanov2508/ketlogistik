@@ -3,6 +3,7 @@
     padding: 40px;
     border-radius: 12px;
     margin-top: -20px;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
 
     .steps {
         display: grid;
@@ -10,8 +11,8 @@
         grid-template-rows: 1fr 1fr;
         gap: 10px;
 
-        .first_step {
-            background-color: #1C8AC7;
+        .bcg_blue {
+            background-color: rgba(28, 139, 199, 0.7);
         }
 
         >div {

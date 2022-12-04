@@ -16,7 +16,6 @@ export default function Home() {
                 <Grid />
                 <Video />
 				<Autopark />
-                <Footer />
 			</Layout>
 		</>
 	);

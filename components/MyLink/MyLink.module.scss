@@ -1,0 +1,9 @@
+.link {
+	transition: all ease-in 0.1s;
+	width: max-content;
+    display: inline-block;
+
+    &.active {
+        color: #1c8ac7;
+    }
+}

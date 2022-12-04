@@ -3,6 +3,7 @@
     background-color: rgba(255, 255, 255, 0.1);
     padding: 40px 40px 150px 40px;
     border-radius: 12px;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
     
     .steps {
         display: flex;
@@ -25,9 +26,10 @@
 .youtube {
     text-align: center;
     margin-top: -120px;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 
     iframe {
         border-radius: 12px;
+        box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
     }
 }

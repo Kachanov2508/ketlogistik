@@ -5,7 +5,6 @@
     width: 350px;
     height: 550px;
     
-    
     .side {
         transition: all .8s ease;
         position: absolute;
@@ -17,7 +16,7 @@
         backface-visibility: hidden;
         border-radius: 12px;
         overflow: hidden;
-        box-shadow: 0 10px 20px rgba(28, 139, 199, 0.05);
+        box-shadow: 0 10px 20px rgb(0 0 0 / 10%);    
     }
     
     .front {
@@ -29,17 +28,6 @@
             -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
             clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
             position: relative;
-
-            // &::before {
-            //     content: '';
-            //     position: absolute;
-            //     top: 0;
-            //     left: 0;
-            //     width: 100%;
-            //     height: 100%;
-            //     background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(28, 139, 199, 0.3)), to(rgba(0, 0, 0, 0.5)));
-            //     background-blend-mode: screen;
-            // }
             
             img {
                 width: 100%;

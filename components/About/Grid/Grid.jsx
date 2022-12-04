@@ -6,11 +6,11 @@ const Grid = () => {
     <div className={classes.grid}>
         <HeadingSection>
             <h4>О компании</h4>
-            <h2>Наши преимущества</h2>
+            <h2>Наш <span>опыт в доставке</span> грузов</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis vero nesciunt minus quidem veritatis dolore harum temporibus eaque excepturi nemo.</p>
         </HeadingSection>
         <div className={classes.steps}>
-            <div className={classes.first_step}>
+            <div className={classes.bcg_blue}>
                 <div>01</div>
                 <h4>Heading</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim optio impedit ratione.</p>
@@ -20,7 +20,7 @@ const Grid = () => {
                 <h4>Heading</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim optio impedit ratione.</p>
             </div>
-            <div>
+            <div className={classes.bcg_blue}>
                 <div>03</div>
                 <h4>Heading</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim optio impedit ratione.</p>
@@ -30,7 +30,7 @@ const Grid = () => {
                 <h4>Heading</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim optio impedit ratione.</p>
             </div>
-            <div>
+            <div className={classes.bcg_blue}>
                 <div>05</div>
                 <h4>Heading</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim optio impedit ratione.</p>

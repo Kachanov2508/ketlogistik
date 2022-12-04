@@ -3,7 +3,10 @@
     border-radius: 12px;
     padding: 40px;
     margin-top: 50px;
-    
+    box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
+    width: 900px;
+    margin: 0 auto 30px auto;
+
 
     .top {
         display: flex;
@@ -54,6 +57,14 @@
 
                 li {
                     margin-bottom: 10px;
+                    transition: all ease-in .1s;
+                    width: max-content;
+                    
+                    &:hover {
+                        box-shadow: 0 10px 20px rgb(0 0 0 / 20%);
+                        color: #1C8AC7;
+                        transform: rotate(5deg) scale(1.3);
+                    }
                 }
             }
         }

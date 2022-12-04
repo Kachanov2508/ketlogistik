@@ -3,4 +3,40 @@
     padding: 15px 40px;
     border-radius: 30px;
     text-align: center;
+    position: relative;
+    transition: all .1s ease-in;
+
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 30px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-color: #1C8AC7;
+    }
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgb(0 0 0 / 20%);
+
+        &::after {
+            animation: pulse .3s ease-in;
+            animation-fill-mode: backwards;
+        }
+    }
+}
+
+@keyframes pulse {
+    0% {
+        opacity: .3;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scaleY(1.7) scaleX(1.3);
+    }
 }
