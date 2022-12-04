@@ -1,22 +1,53 @@
 import Button from "../Button/Button";
 import classes from "./Hero.module.scss";
 import { FaAngleRight } from 'react-icons/fa';
+import { useContext } from "react";
+import HomePageContext from "../../context/Pages/HomePageProvider";
+import LangContext from "../../context/LangProvider";
 
 const Hero = () => {
+
+	const homePageContext = useContext(HomePageContext);
+	const { lang } = useContext(LangContext);
+
+
+
+	// Выбор языка
+	let heading = '';
+	let list = [];
+	let button = '';
+
+	if(lang === 'ru') {
+		heading = homePageContext.hero.heading.ru;
+		list = homePageContext.hero.list.ru;
+		button = homePageContext.hero.button.ru;
+	}
+
+	if(lang === 'en') {
+		heading = homePageContext.hero.heading.en;
+		list = homePageContext.hero.list.en;
+		button = homePageContext.hero.button.en;
+	}
+
+	if(lang === 'tu') {
+		heading = homePageContext.hero.heading.tu;
+		list = homePageContext.hero.list.tu;
+		button = homePageContext.hero.button.tu;
+	}
+
+	
+
 	return (
 		<div className={classes.hero}>
 			<div className={classes.left}>
-				Мы <span>доставим</span> вашу <span>посылку</span> по всему <span>миру</span>
+				{heading}
 			</div>
 
 			<div className={classes.right}>
 				<ul>
-					<li><FaAngleRight/>Грузовые перевозки</li>
-					<li><FaAngleRight/>Страхование грузов</li>
-					<li><FaAngleRight/>Собственный автопарк</li>
-					<li><FaAngleRight/>Автомобили от 2 до 20 тонн</li>
+					{ list.map((item, index) => <li key={index}><FaAngleRight/>{item}</li>) }
 				</ul>
-				<Button link="/about" text="Подробнее" width="100%" />
+				<Button link="/about" text={button} width="100%" />
 			</div>
 		</div>
 	);
