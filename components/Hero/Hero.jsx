@@ -16,7 +16,7 @@ const Hero = () => {
 					<li><FaAngleRight/>Собственный автопарк</li>
 					<li><FaAngleRight/>Автомобили от 2 до 20 тонн</li>
 				</ul>
-				<Button link="/ubout" text="Подробнее" width="100%" />
+				<Button link="/about" text="Подробнее" width="100%" />
 			</div>
 		</div>
 	);
