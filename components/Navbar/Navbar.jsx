@@ -1,10 +1,14 @@
 import { useRouter } from "next/router";
 import { useContext } from "react";
+
 import LangContext from "../../context/LangProvider";
 import HomePageContext from "../../context/Pages/HomePageProvider";
+
 import Lang from "../Lang/Lang";
 import MyLink from "../MyLink/MyLink";
 import classes from "./Navbar.module.scss";
+
+import {FaLanguage} from 'react-icons/fa';
 
 const Navbar = () => {
 
@@ -39,7 +43,14 @@ const Navbar = () => {
 	return (
 		<div className={classes.navbar}>
 			<div className={classes.logo}>
-				<img src="/images/omega.png" alt="omega" />
+				<figure>
+					<img src="/images/omega.png" alt="omega" />
+				</figure>
+			</div>
+			<div className={classes.lang}>
+				<div className={classes.icon}>
+					<FaLanguage />
+				</div>
 				<Lang />
 			</div>
 			<ul>

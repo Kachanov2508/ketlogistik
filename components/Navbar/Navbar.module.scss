@@ -1,19 +1,41 @@
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+
+    display: grid;
+    grid-template-columns: 150px 1fr minmax(max-content, 400px);
     align-items: center;
     padding: 20px 100px;
+
+    .lang {
+        justify-self: end;
+
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        
+        .icon {
+            font-size: 40px;
+            color: rgba(247, 247, 247, 0.5);
+            display: flex;
+            align-items: center;
+        }
+    }
 
     .logo {
         width: 150px;
         
-        img {
-            width: 100%;
-            height: 100%;
-            display: block;
-            object-fit: contain;
-            opacity: 0.9;
+        figure {
+            width: 150px;
+            img {
+                width: 100%;
+                height: 100%;
+                display: block;
+                object-fit: contain;
+                opacity: 0.9;
+            }
         }
     }
 
@@ -21,5 +43,7 @@
         display: flex;
         column-gap: 30px;
         list-style: none;
+
+        justify-self: end;
     }
 }
