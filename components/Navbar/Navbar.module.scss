@@ -1,9 +1,5 @@
 
 .navbar {
-    // display: flex;
-    // justify-content: space-between;
-    // align-items: center;
-
     display: grid;
     grid-template-columns: 150px 1fr minmax(max-content, 400px);
     align-items: center;

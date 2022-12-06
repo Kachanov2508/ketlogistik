@@ -37,7 +37,7 @@ const Lang = () => {
 
 	return (
 		<div className={cls.dropdown} ref={dropdownRef} tabIndex={1} onClick={openDropdown} onBlur={closeDropdown}>
-			<div className={cls.selected}>{selected} {open ? <FaCaretDown/>: <FaCaretUp />}</div>
+			<div className={cls.selected}>{selected} {open ? <FaCaretDown/> : <FaCaretUp />}</div>
 			{open && (
 				<div className={cls.dropdown_items}>
 					<div onClick={(e) => selectDropdown(e)} data-lang='en'>English</div>
